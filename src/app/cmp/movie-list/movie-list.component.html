@@ -1,0 +1,8 @@
+<section>
+  <div>
+    <input (input)="searchMovie($event)" [value]="term" />
+    <ul>
+      <app-movie-preview *ngFor="let movie of movies" [movie]="movie"></app-movie-preview>
+    </ul>
+  </div>
+</section>

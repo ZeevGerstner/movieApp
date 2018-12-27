@@ -1,0 +1,46 @@
+<div *ngIf="movie">
+  <h1>{{movie.Title}} - {{movie.Year}}</h1>
+  <h3>{{movie.Genre}}</h3>
+  <div>
+    <h4>{{movie.Released}}</h4>
+    <h4>{{movie.Runtime}}</h4>
+    <h4>{{movie.Rated}}</h4>
+    <h4>{{movie.Language}}</h4>
+    <h4>{{movie.Country}}</h4>
+  </div>
+
+  <div>
+    <h4>Director: {{movie.Director}}</h4>
+    <h4>Writer: {{movie.Writer}}</h4>
+    <h4>Actors: {{movie.Actors}}</h4>
+  </div>
+
+  <div>
+    Plot:
+    <p>{{movie.Plot}}</p>
+  </div>
+  <img [src]="movie.Poster" />
+
+  <div>
+    <h4>
+      {{movie.imdbRating}}
+    </h4>
+
+    <h4>
+      {{movie.Metascore}}
+    </h4>
+
+    <h4>
+      {{movie.Awards}}
+    </h4>
+
+    <h4>
+      {{movie.imdbVotes}}
+    </h4>
+
+    <h4>
+      {{movie.Production}}
+    </h4>
+    
+  </div>
+</div>
